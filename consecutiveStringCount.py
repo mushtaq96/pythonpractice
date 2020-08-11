@@ -1,5 +1,6 @@
-def find_consecutive(samplestring):
-    dictionary={}
+dictionary={}
+
+def find_consecutive(samplestring):    
     i=0
     while i < len(samplestring)-1:
         count=0
@@ -16,3 +17,10 @@ samplestring = 'Iaamgeek?'
 final = find_consecutive(samplestring)
 print(samplestring)
 print(final)
+
+total=0
+for key in dictionary:
+    if(dictionary[key]==1):
+        total+=1
+print("number of consecutive characters are:",total)
+
